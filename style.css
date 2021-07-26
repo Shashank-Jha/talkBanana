@@ -1,163 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
 
-
-:root{
-    --primary-color : #FFD201;
-    --text-color:#3c3c3c;
+:root {
+  --primary-color: #ffd201;
+  --text-color: #3c3c3c;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flexbox;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     text-align: center;
-    display: flexbox;
-}
-  
-@media only screen and (max-width: 800px) {
-    
-.header .hero{
-    color:var(--primary-color);
+    max-width: 92%;
+  }
+
+  .navigation {
     text-align: center;
-    position: relative;
-    font-size: 50px;
-    font-weight: 800;
-}
+  }
 
-.hero-img{
-    max-width: 100px;
-   position: relative;
-  bottom:150px;
-}
-
-}
-
-.navigation{
-   text-align: right;
-}
-
-.nav-link{
-padding-right: 5rem;
-}
-
-.nav-link:hover{
-    cursor: pointer;
-}
-
-.nav-logo{
-    font-size: 40px;
+  .nav-logo {
+    font-size: 40px !important;
     padding-top: 0.3rem;
     text-align: center;
+  }
+
+  .nav-link {
+    max-width: 50px;
+    padding-top: 1rem;
+    display: block;
+    margin: auto;
+    padding-left: 5rem;
+  }
+
+  .header .hero {
+    font-size: 100px !important;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .hero-img {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    max-width: 300px !important;
+  }
+
+  textarea {
+    max-width: 80%;
+  }
+
+  .footer-img {
+    position: static !important;
+    padding-top: 3rem;
+  }
 }
 
-.header .hero{
-    color:var(--primary-color);
-    text-align: center;
-    position: relative;
-    font-size: 235px;
-    font-weight: 800;
+.navigation {
+  text-align: right;
 }
 
-.hero-img{
-    max-width: 1000px;
-   position: relative;
-  bottom:150px;
+.nav-link {
+  padding-right: 5rem;
 }
 
-textarea{
-
-    height: 200px;
-    width: 500px;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: medium;
-    padding-top: 8px;
-    padding-left: 8px;
-    resize: none;
-    border-radius: 0.5rem;
-    border:none;
-    box-shadow: 2px 2px 4px var(--text-color);
-    -webkit-box-shadow: 2px 2px 4px var(--text-color);
-    -moz-box-shadow: 2px 2px 4px var(--text-color);
-    outline: none;
+.nav-link:hover {
+  cursor: pointer;
 }
 
-textarea::placeholder{
-   font-size: medium;
+.nav-logo {
+  font-size: 40px;
+  padding-top: 0.3rem;
+  text-align: center;
 }
 
-
-.section{
-    position: relative;
-   text-align: center;
-   bottom:160px;
-    left:10px;
-    color: var(--text-color);
+.header .hero {
+  color: var(--primary-color);
+  text-align: center;
+  position: relative;
+  font-size: 235px;
+  font-weight: 800;
 }
 
-.text-area-msg{
-    font-weight: light;
-    font-size: large;
+.hero-img {
+  max-width: 1000px;
+  position: relative;
+  bottom: 150px;
 }
 
-.btn{
-   
-    padding:1rem;
+textarea {
+  height: 200px;
+  width: 500px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: medium;
+  padding-top: 8px;
+  padding-left: 8px;
+  resize: none;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px 4px var(--text-color);
+  -webkit-box-shadow: 2px 2px 4px var(--text-color);
+  -moz-box-shadow: 2px 2px 4px var(--text-color);
+  outline: none;
 }
-.submit-btn{
-    position: relative;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border-radius: 1rem;
-    border: solid;
-    padding: 15px 32px;
-    border-color: var(--primary-color);
-    font-family : inherit;
-    font-size: 1.2em;
-    /* box-shadow: 0px 0px 8px #4c4c4c;
+
+textarea::placeholder {
+  font-size: medium;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  bottom: 160px;
+  left: 10px;
+  color: var(--text-color);
+}
+
+.text-area-msg {
+  font-weight: light;
+  font-size: large;
+}
+
+.btn {
+  padding: 1rem;
+}
+.submit-btn {
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  border: solid;
+  padding: 15px 32px;
+  border-color: var(--primary-color);
+  font-family: inherit;
+  font-size: 1.2em;
+  /* box-shadow: 0px 0px 8px #4c4c4c;
     -webkit-box-shadow: 0px 0px 8px #4c4c4c;
     -moz-box-shadow: 0px 0px 8px #4c4c4c; */
 }
 
-button:hover{
-cursor: pointer;
-color: var(--primary-color);
-background: white;
-border: solid;
-padding: 15px 32px;
-border-color: var(--primary-color);
-border-radius: 1rem;
-font-weight: 800;
+button:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+  background: white;
+  border: solid;
+  padding: 15px 32px;
+  border-color: var(--primary-color);
+  border-radius: 1rem;
+  font-weight: 800;
 }
 /* .footer {
     background: var(--primary-color);
     height: 350px;
     
 } */
-.footer-img{
-    position: absolute;
-    bottom:100px;
+.footer-img {
+  position: absolute;
+  bottom: 100px;
 }
-.footer-div{
-    position: absolute;
-    bottom:10px;
-    background-image: linear-gradient(to right, white , var(--primary-color));
-    transform:skewY(-15deg);
-    width: 100%;
-    transform-origin: top left;
-    z-index: -1;
-    height: 450px;
- 
+.footer-div {
+  position: absolute;
+  bottom: 10px;
+  background-image: linear-gradient(to right, white, var(--primary-color));
+  transform: skewY(-15deg);
+  width: 100%;
+  transform-origin: top left;
+  z-index: -1;
+  height: 450px;
 }
-.footer-div2{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color : var(--text-color);
-    font-weight: 400;
-    width: 100%;
+.footer-div2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  width: 100%;
 }
